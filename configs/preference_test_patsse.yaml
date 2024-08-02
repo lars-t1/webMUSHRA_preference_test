@@ -1,0 +1,81 @@
+# CIP evaluation config
+
+
+testname: Listening Test
+testId: ciptest
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+#remoteService: service/write.php
+remoteService:   https://usebasin.com/f/988e6315e068
+
+
+pages:
+
+    - type: generic
+      id: welcome_page
+      name: Welcome
+      content: <center><div style="width: 700px; text-align: center;">In this listening test, you will be presented with pairs of differently degraded speech signals. Your task is to select the signal you prefer in terms of overall quality. Additionally, there is a reject option if you cannot decide for one of the two signals.</div></center>
+    - type: preference_test
+      id: trialpref
+      name: Preference test
+      content: |
+        <p><b>Which sound do you prefer in terms of overall quality?</b></p>
+      considerOrder: false
+      mustPlayback: processUpdate
+      unforced: None
+      stimuli:
+          - Car_0dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p226_203_Midsize_Car2_100Kmh_binaural ( 0.00-30.00 s)_0dB_SNR.wav
+            Car_0dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p226_203_Midsize_Car2_100Kmh_binaural ( 0.00-30.00 s)_0dB_SNR.wav
+            Car_0dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p226_203_Midsize_Car2_100Kmh_binaural ( 0.00-30.00 s)_0dB_SNR.wav
+          - Car_10dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p240_237_Midsize_Car2_100Kmh_binaural ( 0.00-30.00 s)_10dB_SNR.wav
+            Car_10dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p240_237_Midsize_Car2_100Kmh_binaural ( 0.00-30.00 s)_10dB_SNR.wav
+            Car_10dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p240_237_Midsize_Car2_100Kmh_binaural ( 0.00-30.00 s)_10dB_SNR.wav
+          - Pub_0dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p248_211_Pub_Noise_Binaural_V2_0dB_SNR.wav
+            Pub_0dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p248_211_Pub_Noise_Binaural_V2_0dB_SNR.wav
+            Pub_0dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p248_211_Pub_Noise_Binaural_V2_0dB_SNR.wav
+          - Pub_10dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p245_017_Pub_Noise_Binaural_V2_10dB_SNR.wav
+            Pub_10dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p245_017_Pub_Noise_Binaural_V2_10dB_SNR.wav
+            Pub_10dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p245_017_Pub_Noise_Binaural_V2_10dB_SNR.wav
+          - Office_0dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p265_060_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_0dB_SNR.wav
+            Office_0dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p265_060_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_0dB_SNR.wav
+            Office_0dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p265_060_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_0dB_SNR.wav
+          - Office_10dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p245_314_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_10dB_SNR.wav
+            Office_10dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p245_314_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_10dB_SNR.wav
+            Office_10dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p272_029_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_10dB_SNR.wav
+          - Crossroad_0dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p272_029_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_0dB_SNR.wav
+            Crossroad_0dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p272_029_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_0dB_SNR.wav
+            Crossroad_0dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p272_029_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_0dB_SNR.wav
+          - Crossroad_10dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p240_309_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_10dB_SNR.wav
+            Crossroad_10dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p240_309_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_10dB_SNR.wav
+            Crossroad_10dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p240_309_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_10dB_SNR.wav
+    - type: finish
+      name: Thank you
+      content: Thank you for attending!
+      popupContent: Your results were sent. Goodbye and have a nice day.
+      showResults: true
+      writeResults: true
+      generateSubjectId: true
+      generateTimestamp: true
+      questionnaire:
+       - type: number
+         label: Age
+         name: age
+         optional: true
+         min: 0
+         max: 100
+         default: 30
+       - type: likert
+         name: gender
+         label: Gender
+         response:
+          - value: female
+            label: Female
+          - value: male
+            label: Male
+          - value: other
+            label: Other
+       #- type: long_text
+         #label: Feedback
+         #name: feedback
+         #optional: true
