@@ -15,7 +15,7 @@ pages:
     - type: generic
       id: welcome_page
       name: Welcome
-      content: <center><div style="width: 700px; text-align: center;">In this listening test, you will be presented with pairs of differently degraded speech signals. Your task is to select the signal you prefer in terms of overall quality. Additionally, there is a reject option if you cannot decide for one of the two signals.me.<br><br>You can use the following keyboard shortcuts:<ul style="margin-top: 3px; text-align: left"><li><span style="font-family: monospace; font-size: 15px; font-weight:bold;">1:</span> Play item A</li><li><span style="font-family: monospace; font-size: 15px; font-weight:bold;">2:</span> Play item B</li></ul></div></center>
+      content: <center><div style="width: 700px; text-align: center;">In this listening test, you will be presented with pairs of differently degraded speech signals. Your task is to select the signal you prefer in terms of overall quality. Additionally, there is a reject option if you cannot decide for one of the two signals.<br><br>You can use the following keyboard shortcuts:<ul style="margin-top: 3px; text-align: left"><li><span style="font-family: monospace; font-size: 15px; font-weight:bold;">1:</span> Play item A</li><li><span style="font-family: monospace; font-size: 15px; font-weight:bold;">2:</span> Play item B</li></ul></div></center>
     - type: preference_test
       id: trialpref
       name: Preference test
