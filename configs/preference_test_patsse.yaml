@@ -42,7 +42,7 @@ pages:
             Office_0dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p265_060_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_0dB_SNR.wav
           - Office_10dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p245_314_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_10dB_SNR.wav
             Office_10dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p245_314_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_10dB_SNR.wav
-            Office_10dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p272_029_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_10dB_SNR.wav
+            Office_10dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p245_314_Work_Noise_Office_Callcener_binaural ( 0.00-30.00 s)_10dB_SNR.wav
           - Crossroad_0dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p272_029_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_0dB_SNR.wav
             Crossroad_0dB_B: configs/resources/audio/patsse_preference_test/ETSSE_SMWA/stereo/p272_029_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_0dB_SNR.wav
             Crossroad_0dB_C: configs/resources/audio/patsse_preference_test/PETSSE_without_FEQ/stereo/p272_029_Outside_Traffic_Crossroads_binaural ( 0.00-20.00 s)_0dB_SNR.wav
