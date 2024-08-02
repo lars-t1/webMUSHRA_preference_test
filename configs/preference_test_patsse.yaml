@@ -22,7 +22,7 @@ pages:
       content: |
         <p><b>Which sound do you prefer in terms of overall quality?</b></p>
       considerOrder: false
-      mustPlayback: processUpdate
+      mustPlayback: ended
       unforced: None
       stimuli:
           - Car_0dB_A: configs/resources/audio/patsse_preference_test/TSSE_Magn/stereo/p226_203_Midsize_Car2_100Kmh_binaural ( 0.00-30.00 s)_0dB_SNR.wav
